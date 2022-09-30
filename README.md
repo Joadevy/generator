@@ -4,7 +4,7 @@
 
 => It's a command for install initial configs to setup a React project workflow (ESLint & other things). It's a fork and a small adaptation of the [goncy generator](https://github.com/goncy/generator)🙏🏼 customized for my personal requirements.
 
-### How can I use it? (Not ready yet, available soon!)
+### How can I use it?
 
 Install Yeoman globally: `npm install -g yo`
 
