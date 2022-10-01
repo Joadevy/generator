@@ -7,8 +7,11 @@ module.exports = class extends Generator {
         type: "checkbox",
         name: "features",
         message: "What features do you want?",
-        choices: [{ name: "ESLint", checked: true }, { name: "App" }],
-        default: ["ESLint"],
+        choices: [
+          { name: "ESLint", checked: true },
+          { name: "Tailwind" },
+          { name: "App" },
+        ],
       },
       {
         type: "list",
@@ -31,10 +34,10 @@ module.exports = class extends Generator {
         when: (answers) => answers.features.includes("App"),
         choices: [
           {
-            name: "simple",
+            name: "Simple",
           },
           {
-            name: "router",
+            name: "Router",
           },
         ],
       },
@@ -51,12 +54,21 @@ module.exports = class extends Generator {
       }
     }
 
+    if (answers.features.includes("Tailwind")) {
+      this.composeWith(require.resolve("./tailwind"));
+    }
+
     if (answers.app) {
-      if (answers.app === "simple") {
+      if (answers.app === "Simple") {
         this.composeWith(require.resolve("./app/simple"));
-      } else if (answers.app === "router") {
+      } else if (answers.app === "Router") {
         this.composeWith(require.resolve("./app/router"));
       }
     }
+  }
+
+  end() {
+    this.log(" ");
+    this.log("Finished generating, happy coding!");
   }
 };

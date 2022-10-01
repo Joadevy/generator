@@ -8,8 +8,8 @@
 
 Install Yeoman globally: `npm install -g yo`
 
-Then install the jjoadevy generator globally: ` npm install -g generator-jjoadevy`
+Then install the jjoadevy generator globally: `npm install -g generator-jjoadevy`
 
-Navigate to a directory you want to generate the files in, then run` yo jjoadevy:react`
+Navigate to a directory you want to generate the files in, then run `yo jjoadevy:react`
 
 Then select the options you want to install & enjoy saving your time copy-pasting boring settings.
