@@ -4,7 +4,7 @@
   "description": "React ESLint settings to set-up a project quickly",
   "main": "index.js",
   "keywords": [
-    "yaoman-generator"
+    "yeoman-generator"
   ],
   "repository": {
     "type": "git",
