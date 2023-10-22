@@ -1,6 +1,6 @@
 {
   "name": "generator-jjoadevy",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A simple React ESLint & Tailwind settings to set-up a project quickly. A perfect combination after create a React project with vite or CRA.",
   "main": "index.js",
   "keywords": [
