@@ -13,6 +13,6 @@
   "author": "jjoadevy",
   "license": "ISC",
   "dependencies": {
-    "yeoman-generator": "^5.7.0"
+    "yeoman-generator": "^5.10.0"
   }
 }
